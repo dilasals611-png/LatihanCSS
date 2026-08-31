@@ -1,0 +1,37 @@
+h5{
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    text-decorantion: underline;
+}
+o1{
+  font-family: 'couler New';
+  font-size: 14px;
+  color:bisque;
+}
+ul{
+    font-family: courler;
+    font-size: 14pc;
+    color:bisque
+}
+.parag{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: helvetica;
+    color:bisque
+    text-align: center;
+}
+
+/*
+/*contoh class untuk gambar*/
+.gambar{
+    width: 10%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 15px;
+    border-radius: #f57676;
+}
+.gambar:hover{
+    width: 15%;
+    height: auto;
+    border-color:aliceblue;
+}
