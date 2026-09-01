@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Makanan</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #ffb347;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 25px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .gambar {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 5px solid #b8f2ff;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        h3 {
+            color: #333;
+            padding-bottom: 5px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .bahan {
+            background: #cceeff;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .cara {
+            background: #fff1d6;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        .tombol {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .index {
+            background: red;
+            color: white;
+        }
+
+        .index.klik {
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🍴 Resep Makanan</h1>
+        <p>Kumpulan resep makanan sederhana</p>
+    </header>
+
+    <div class="container">
+
+        <img class="gambar"
+             src="https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+             alt="Nasi Goreng">
+
+        <h2>Nasi Goreng Sederhana</h2>
+
+        <div class="bahan">
+            <h3>Bahan-bahan</h3>
+            <ul>
+                <li>2 piring nasi putih</li>
+                <li>1 butir telur</li>
+                <li>2 siung bawang putih</li>
+                <li>2 sdm kecap manis</li>
+                <li>Garam secukupnya</li>
+            </ul>
+        </div>
+
+        <h3>Alat</h3>
+        <ul>
+            <li>Wajan</li>
+            <li>Spatula</li>
+            <li>Piring</li>
+        </ul>
+
+        <div class="cara">
+            <h3>Cara Pembuatan</h3>
+            <ol>
+                <li>Panaskan sedikit minyak di wajan.</li>
+                <li>Tumis bawang putih sampai harum.</li>
+                <li>Masukkan telur lalu orak-arik.</li>
+                <li>Masukkan nasi dan aduk hingga rata.</li>
+                <li>Tambahkan kecap dan garam.</li>
+                <li>Aduk sampai matang, lalu sajikan.</li>
+            </ol>
+        </div>
+
+        <div class="tombol">
+            <button class="index" onclick="kembaliIndex(this)">
+                Kembali ke Index
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        function kembaliIndex(tombol) {
+            tombol.classList.add("klik");
+
+            setTimeout(function() {
+                window.location.href = "index.html";
+            }, 200);
+        }
+    </script>
+
+</body>
+</html>
